@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import _ from 'lodash';
 import menu from '../../../menu';
 
 const $ = require('jquery');
-require('./Sidebar.css');
 
 class Sidebar extends Component {
   constructor(props) {

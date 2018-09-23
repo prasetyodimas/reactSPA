@@ -1,0 +1,138 @@
+.sidebar-container {
+  height: 0;
+}
+
+.sidebar-toggle {
+  background:$white-color;
+  cursor: pointer;
+  display: none;
+  font-size: 24px;
+  padding: 16px;
+}
+
+.sidebar {
+  height: 100%;
+  position: fixed;
+  width: 250px;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  background-color:$white-color;
+  border-right: 1px solid #e2e4e6;
+  overflow-y: scroll;
+  .sidebar-header {
+    height: 56px;
+    background: $brand-tunaiku;
+    .logo {
+      display: inline-block;
+      padding: 10px 44px;
+      color:$white-color;
+      font-size: 20px;
+    }
+  }
+  .sidebar-close-button {
+    display: none;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+.sidebar-links div {
+  > a {
+    display: block;
+    text-decoration: none;
+    margin: 0 auto 5px auto;
+    padding: 10px 0 10px 5px;
+    text-align: left;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+  }
+  &.selected > a {
+    background-color: #e9e9ea;
+    color: #4a4a4a;
+    line-height: 2.3;
+    margin: 0;
+  }
+  > a i.fa {
+    position: relative;
+    font-size: 20px;
+    top: 3px;
+    width: 40px;
+    text-align: center;
+  }
+  ul.sub-links {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0 0 0 30px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0;
+    transition: 0.4s;
+  }
+  &.selected ul.sub-links {
+    max-height: 150px;
+    padding: 12px 0 12px 30px;
+  }
+  .sub-links a {
+    text-decoration: none;
+    color: #4a4a4a;
+    display: block;
+    text-align: left;
+    &.selected-link {
+      color: #944eb8;
+    }
+  }
+  &.link-blue > a {
+    border-color: #487db2;
+    i.fa {
+      color: #487db2;
+    }
+  }
+  &.link-red > a {
+    border-color: #da4545;
+    i.fa {
+      color: #da4545;
+    }
+  }
+  &.link-yellow > a {
+    border-color: #d0d237;
+    i.fa {
+      color: #d0d237;
+    }
+  }
+  &.link-green > a {
+    border-color: #86be2e;
+    i.fa {
+      color: #86be2e;
+    }
+  }
+}
+
+/* Link Colors */
+
+@media screen and (max-width: 765px) {
+  .sidebar-container {
+    height: 56px;
+  }
+  .sidebar-toggle {
+    display: inline-block;
+  }
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    &.opened {
+      transform: translateX(0);
+    }
+    .sidebar-close-button {
+      display: block;
+    }
+  }
+}

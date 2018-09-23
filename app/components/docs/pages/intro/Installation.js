@@ -1,10 +1,11 @@
 import React from 'react';
 
 const installationCode =
-`git clone https://github.com/LucasBassetti/react-spa-boilerplate.git
-cd react-spa-boilerplate
-npm install
-npm start
+` First you can clone github at bellow 
+ - git clone https://github.com/Vladmir123/reactSPA.git
+ - cd reactSPA
+ - npm install  ** Dont Forget Installing your dependecy ex Node Modules :)
+ - npm start / npm run start
 `;
 
 const Installation = () => (

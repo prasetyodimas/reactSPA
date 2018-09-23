@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
 import menu from '../../menu';
-
-require('./Docs.css');
 
 const routes = [];
 for (let i = 0, len = menu.sections.length; i < len; i += 1) {

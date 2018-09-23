@@ -1,0 +1,46 @@
+.home {
+  background: $brand-tunaiku;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $gradient-left, $gradient-right);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $gradient-left, $gradient-right);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $white-color;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12px;
+  .title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .description {
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: center;
+  }
+  .buttons {
+    margin: 24px 0;
+  }
+  .docs-button {
+    border: 2px solid $white-color;
+    border-radius: 30px;
+    color: $white-color;
+    padding: 12px 32px;
+    transition: all .3s linear;
+    &:hover {
+      background: $white-color;
+      color:$black-color !important;
+      opacity: 1;
+    }
+    i {
+      padding-right: 12px;
+    }
+  }
+}
+
+.imgRounded {
+  border-radius: 100%;
+}

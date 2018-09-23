@@ -33,6 +33,8 @@ module.exports = {
       },
     ]),
   ],
+  debug: true,
+  devtool: '#eval-source-map',
   module: {
     loaders: [
       {
@@ -42,12 +44,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!postcss-loader',
+        loader: 'style-loader!css-loader!',
       },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
+      }
     ],
   },
-  postcss: () => [
-    precss,
-    autoprefixer,
-  ],
 };

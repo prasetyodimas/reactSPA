@@ -1,0 +1,95 @@
+span {
+  font-size: 15px;
+}
+
+h1.title{
+  font-size: 1.6em;
+  padding: 8px;  
+}
+
+a {
+  text-decoration: none;
+  color:$black-color;
+}
+
+main {
+  margin-left: 250px;
+  padding:24px;
+  .header{
+    padding:0px 24px;
+    background:$light-grey;
+    border-radius: 5em;
+  }
+}
+
+.box {
+  padding: 60px 0px;
+}
+
+.box-part {
+  background:$white-color;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px;
+}
+
+.docs-installation{
+  background:$light-grey;
+  padding: 20px;
+  border-radius: 11px;
+}
+
+.text {
+  margin: 20px 0px;
+}
+
+.wrapper-spinner{
+  display: block;
+  position: relative;
+  top:8em;
+  left:0;
+  right:0;
+  text-align: center;
+  i.spinning-fonts{
+    @extend .share-colorsbrand;
+    @extend .share-fontspining;
+  }
+  span.spins{
+    @extend .share-colorsbrand;
+    @extend .share-fontspining;
+  }
+}
+.share-fontspining{
+    font-size:3em;
+}
+.share-colorsbrand{
+  color:$brand-tunaiku;
+}
+
+.wrapper-elemsblock {
+  background-color: $white-color;
+  padding: 1.1em;
+  .heading-block{
+    margin-bottom:15px;
+  }
+  .panel-group{
+    ul.films-ul{
+      li.films-li{
+        border-bottom:1px solid $light-grey;
+      }
+      & a:hover{
+        font-size:1.40em;
+        transition: all 500ms ease-in-out;
+        text-decoration:none;
+        color:$black-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  main {
+    margin: 0;
+    padding: 24px;
+  }
+}

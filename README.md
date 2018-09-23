@@ -1,14 +1,12 @@
 # React SPA Boilerplate
 
-React SPA boilerplate for open source project
+React SPA for Frontend Technical Test.
 
-<a href="http://lucasbassetti.com.br/react-spa-boilerplate/" target="_blank"> <img src="https://cloud.githubusercontent.com/assets/1014326/25073696/406d6aa6-22c2-11e7-99fd-3d09d09b37d6.png" width="600"  />
-</a>
 
 ## Features
 
 - Simple `index.html` loading `bundle.js`.
-- Starter `index.jsx` for React.
+- Starter `index.js` for React.
 - All code following Airbnb's JavaScript (ES6) style guide with ESlint.
 - Webpack dev server with automatic reloading. Start with: `npm start`.
 - Deployment build with `npm run build`.
@@ -16,10 +14,8 @@ React SPA boilerplate for open source project
 ## Components
 
 - [Babel](https://babeljs.io) for ES6 support.
-- [Chai](http://chaijs.com/) as BDD / TDD assertion library.
+- [SASS / SCSS](https://sass-lang.com/) as front-end Css Prepocessor.
 - [ESlint](http://eslint.org) for ES6 linting using Airbnb's JS style guide.
-- [Mocha](https://mochajs.org/) as test framework.
-- [Nyc](https://github.com/istanbuljs/nyc) for test coverage
 - [React](https://facebook.github.io/react/) as front-end view library.
 - [Webpack](https://webpack.github.io) for bundling of JavaScript modules.
 
@@ -28,9 +24,9 @@ React SPA boilerplate for open source project
 Run the following commands in your terminal
 
 ```bash
-git clone https://github.com/LucasBassetti/react-spa-boilerplate.git
-cd react-spa-boilerplate
-npm install
+git clone https://github.com/vladmir123/reactSPA.git
+cd reactSPA
+npm install (install dependecy) listed by package.json 
 npm start
 ```
 
@@ -39,13 +35,13 @@ Then open [http://localhost:8080/](http://localhost:8080/) on your web browser.
 ### Testing
 
 1. Run `npm test` for simple test.
-2. Run `npm run test:watch` for watch tests.
-3. Run `npm run test:coverage` for test coverage. This will generate a `coverage` folder. Open the `index.html` file in this folder to check the results.
+2. Run `npm run build` for build sorce / bundle.
+
 
 ## Deploying
 
 For deployment, run `npm run build` and upload `build/` to your server.
 
-## License
 
-MIT · [Lucas Bassetti](http://lucasbassetti.com.br)
+## Authors
+Dimas Prasetyo

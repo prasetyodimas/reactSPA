@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import render from 'react-dom';
+import { Route, Link } from 'react-router-dom';
+//import component 
 import Home from './components/home/Home';
 import Docs from './components/docs/Docs';
 
