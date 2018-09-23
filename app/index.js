@@ -17,9 +17,7 @@ class MainComponent extends React.Component {
         	  <Switch>
           		<Route path="/" exact component={App}/>
 	            <Route path="/docs/api/film" exact render={props=>(
-                 <div>
-                  kampret
-                </div>
+                 <div>Why not working child router !!</div>
               )}/>
             </Switch>
         </BrowserRouter>
