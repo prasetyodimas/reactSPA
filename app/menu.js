@@ -39,16 +39,6 @@ const menu = {
         },
       ],
     },
-    {
-      links: [
-        {
-          href: '/docs/api/film',
-          title: 'API from SWAPI Detail Film',
-          description: 'https://swapi.co/api/films',
-          component: <Installation />,
-        },
-      ],
-    },
   ],
 };
 
